@@ -1,0 +1,50 @@
+﻿@model Assignment1.Models.ParentTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>ParentTable</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.otherthing1)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.otherthing1)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.otherthing2)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.otherthing2)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.otherthing3)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.otherthing3)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
